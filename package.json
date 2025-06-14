@@ -1,5 +1,5 @@
 {
-  "name": "monorepo_project",
+  "name": "nest-next-auth",
   "private": true,
   "scripts": {
     "build": "turbo run build",
@@ -9,6 +9,7 @@
     "check-types": "turbo run check-types"
   },
   "devDependencies": {
+    "@types/passport-google-oauth20": "^2.0.16",
     "prettier": "^3.5.3",
     "turbo": "^2.5.3",
     "typescript": "5.8.2"
@@ -20,5 +21,8 @@
   "workspaces": [
     "apps/*",
     "packages/*"
-  ]
+  ],
+  "dependencies": {
+    "@repo/typescript-config": "^0.0.0"
+  }
 }
